@@ -107,7 +107,7 @@ with c2:
     with c1:
         if st.session_state.image is not None:
             st.session_state.image = Image.open(st.session_state.image)
-            st.image(st.session_state.image, caption="上传的图片", use_column_width=True, width=400)
+            st.image(st.session_state.image, caption="上传的图片")
         
         st.write('职位：', st.session_state['occupy'])
         st.write('电话：', st.session_state['tele'])
